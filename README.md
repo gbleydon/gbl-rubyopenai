@@ -545,6 +545,9 @@ response = client.completions(
 puts response["choices"].map { |c| c["text"] }
 # => [", there lived a great"]
 ```
+Note that Azure Completions are legacy and only work in a limited set of regions and with a subset of model/deployments.
+Microsoft suggests you stick with chat/completions instead
+see  [Note] (https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/completions)
 
 ### Embeddings
 
